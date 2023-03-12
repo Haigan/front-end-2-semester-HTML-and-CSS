@@ -1,0 +1,29 @@
+figure{
+	text-align: center;
+}
+body{
+	margin-left:20px;
+}
+body{
+	background-color: red;
+}
+p{
+	background-color: black;
+	color: white;
+	padding: 10px;
+	width: 700px;
+}
+table{
+	background-color: Purple;
+}
+h1,h2,h3{
+	background-color: Gray;
+    font-size: 40px;
+    color: yellow;
+}
+.links{
+	background-color: black;
+	color: white;
+	font-size: 50px;
+}
+

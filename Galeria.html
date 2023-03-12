@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/imagens.css">
+    <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
+    <title>GALERIA</title>
+</head>
+<body>
+    <header>
+        <h1>GALERIA</h1>
+    </header>
+  
+        <div class="imagens">
+
+            <section class="sessao">
+            <div id="voltar" class="button" >
+                <i class="fas fa-chevron-left" ></i>
+            </div>
+
+                <div id="img-principal" class="imgs-princ">
+                    <img src="imagens/1.pnj.jpg" alt="" id ="trocatroca">
+                </div>
+                
+                <div id="avancar" class="button">
+                <i class="fas fa-chevron-right" ></i>
+                </div>
+            </section>
+
+            <main class="content">
+            
+                <img src="imagens/1.pnj.jpg" alt="" onclick="img1()" class="imgs">
+           
+                <img src="imagens/2.pnj.jpg" alt="" class="imgs" onclick="img2()">
+          
+                <img src="imagens/3.pnj.jpg" alt="" class="imgs" onclick="img3()" >
+            
+                <img src="imagens/4.pnj.jpg" alt="" class="imgs" onclick="img4()">
+            
+                <img src="imagens/5.pnj.jpg" alt="" class="imgs" onclick="img5()">
+            
+                <img src="imagens/6.pnj.jpg" alt="" class="imgs" onclick="img6()">
+            
+             </main>     
+     </div>
+
+    <script>
+        const imagem_principal = document.querySelector("#trocatroca")
+        const voltar = document.getElementById("voltar")
+        const avancar = document.getElementById("avancar")
+        const img = document.getElementsByClassName("imgs")
+
+        let conta = 0 ;
+        avancar.addEventListener( "click" ,()=>{
+
+            if(conta>=img.length-1){
+                conta=0
+            }else{
+                conta ++
+                chama();
+            }
+        })
+
+        voltar.addEventListener( "click" ,()=>{
+
+            if(conta<=0){
+                conta=5
+            }else{
+                conta --
+                chama();
+            }
+        })
+
+        function chama(){
+       
+        imagem_principal.src = img[conta].src ;
+       
+        }
+
+        function img1(){
+            imagem_principal.src =  "1.pnj.jpg"
+
+        }
+
+        function img2(){
+            imagem_principal.src =  "2.pnj.jpg"
+        }
+        function img3(){
+            imagem_principal.src =  "3.pnj.jpg"
+        }
+        function img4(){
+            imagem_principal.src =  "4.pnj.jpg"
+        }
+        function img5(){
+            imagem_principal.src =  "5.pnj.jpg"
+        }
+        function img6(){
+            imagem_principal.src =  "6.pnj.jpg"
+        }
+
+
+    </script>
+    
+</body>
+</html>

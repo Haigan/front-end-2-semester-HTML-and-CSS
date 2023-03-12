@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/final.css">
+    <title>Portifólio Front-End</title>
+</head>
+<body>
+
+    <nav class="navlist">
+      
+        <ul class="icons">
+            <img src="imagens/ifnmg.png" alt="">
+            <li><a href="index.html" class="icon-link"><i class="fas fa-home"></i></i> Home</i></a>
+            <li><a href="https://www.instagram.com/math.italo/"class="icon-link"><span class="hidden"><i class="fab fa-instagram"></i> instagram</span></a></li>
+            <li><a href="https://www.facebook.com/matheus.italo.334/" class="icon-link"><span class="hidden"> <i class="fab fa-facebook-square"></i></i> Facebook</span></i></a></li>
+            <li><a href="#" class="icon-link"><span class="hidden"><i class="fab fa-twitter"></i> Twitter       |</span></i></a></li>    
+            <h1 class="banner">PORTIFÓLIO DISCIPLINA</h1>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br>
+   
+
+    <div class="container">
+
+      <div id="trab1">
+        <p>
+            Tudo começou com o primeiro trabalho ministrado pelo professor Alessandro, tinha a finalidade de usar as tags HTML para formatar um texto
+            de maneira simples e prática, com alguns comandos como p,ol, li, center e também adicionar algumas imagens usando as tags img para inserir
+            mas sem uso de CSS, ficou muito muito feio, porém para se entender a semântica por trás do front-end é preciso ir por partes desenvolvendo
+            o raciocínio lógico e analisando como cada coisa funciona e sua determinada finalidade.
+            Confere abaixo como ficou:
+        </p>
+
+        <a href="trabalho1.html" id="button">PRIMEIRO TRABALHO</a>
+      </div>
+
+      <br><br><br>
+
+      <div id="trab2">
+        <p>
+            O segundo trabalho que fizemos na disciplina era basicamente criar uma tabela pegando a área de abrangência do IFNMG, indicando para cada
+            Campus, pelo menos 5 cidades na sua área de abrangência, para cada Campus nossa tabela tinha o dever de apresentar pelo menos 5 cidades 
+            da sua área de abrangência e a população aproximada e no final a tabela tinha que dar o total da população atendida pelo instituto levando
+            em consideração as cidades apresentadas na tabela, deu um pouco de trabalho, mas depois que vc entende como funciona, fica até bobo.
+            Confere ai a minha tabela:
+        </p>
+        <a href="trabalho2.html" id="button">SEGUNDO TRABALHO</a>
+      </div>
+
+      <br><br><br>
+
+      <div id="trab3">
+        <p>
+            O terceiro trabalho era a gente conhecendo como funcionava o CSS para poder unir com nosso código HTML, basicamente deveriamos
+            criar um arquivo CSS, definir algumas propriedas como text-align, margin, algumas medidas px no elemento body, algumas mudanças
+            de cores no background, padding, width e etc, após editarmos conforme era pedido, deveriamos colocar o link do CSS e enviar.
+            Também não ficou lá essas coisas, primeira vez é assim mesmo, confere:
+        </p>
+        <a href="trabalho_3.html" id="button">TERCEIRO TRABALHO</a>
+      </div>
+
+     <br><br><br>
+
+      <div id="trab4">
+        <p>
+            Esse sendo o Quarto trabalho, envolvia todos os conhecimentos adquiridos até aquele momento no curso, a proposta era
+            criar um produto digital para ser comercializado na internet, envolvia HTML e CSS, sem uso de JavaScript, o valor era 10 pontos
+            nosso grupo ficou cada um responsável por determinada página que o usuário iria navegar, nosso tema principal foi infoprodutos
+            ebooks sobre desenhos, criação de jogos e programação, nós nos empenhamos muito em tentar lapidar ao máximo esse nosso site com
+            todos os conhecimentos que adquirimos e também pesquisamos muito por fora sobre como fazer, quais tags adequadas usar e como deixar
+            tudo o mais real possível mesmo sem a ferramenta JS para dar vida a tudo, deixamos hospedado no GitHub do Ilgner, ficou muito foda.
+            Confere ai:
+        </p>
+        <a href="https://ilgnerbecheleni.github.io/trabalho_front_/#loja" id="button">QUARTO TRABALHO</a>
+      </div>
+
+      <br><br><br>
+
+      <div id="trab5">
+        <p>
+            Esse quinto trabalho da nossa disciplina envolveu conhecimentos da base de formulários, aprendemos a utilizar comandos básicos como
+            as tags form, input, label, fieldset, select, textarea e etc. Nessa atividade criamos um sistema que o usuário pudesse solicitar a 
+            segunda chamada, deveria conter tela de login, poderia visualizar solicitações já feitas, enviar documento com imagem e muito mais.
+        </p>
+        <a href="sistema.html" id="button">QUINTO TRABALHO</a>
+      </div>
+
+      <br><br><br>
+
+      <div id="trab6">
+        <p>
+            No nosso sexto trabalho de front-end a finalidade era testar alguns comandos de JavaScript, deveriamos criar um pequeno sistema com algumas
+            imagens aleatórias para testar as funcionalidades de Zoom (Mostrar a imagem ampliada) e colocar alguns botões para o usuário navegar, eram 
+            botões como avançar, voltar, escurer, clarear e mais qualquer outra idéia que tivesse. 
+        </p>
+        <a href="Galeria.html" id="button">SEXTO TRABALHO</a>
+      </div>
+
+    </div>
+    <footer>
+        <h1>E AGORA A HISTÓRIA CONTINUA...</h1>
+    </footer>
+
+
+
+    <script>
+        let texto = " MATHEUS ITALO - PORTIFÓLIO DA DISCIPLINA FRONT-END |";
+        
+        const banner = document.querySelector(".banner");
+        let cont = texto.length;
+        let status = false;
+
+        banner.innerHTML = texto;
+        setInterval(() => {
+            if(cont <= texto.length && status == false){
+                banner.innerHTML = texto.slice(0,cont);
+                if(cont <= 0){
+                    status = true;
+                }
+                cont--;
+            }
+            if(cont <= texto.length && status == true){
+                cont++;
+                banner.innerHTML = texto.slice(0,cont);
+                if(cont >= texto.length){
+                    status = false;
+                }
+            }
+        },80);
+    </script>
+    
+</body>
+</html>
